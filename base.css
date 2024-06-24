@@ -1,0 +1,135 @@
+body{
+    font-family: Josefin Sans;
+    height:70px
+}
+
+.full{
+    display:flex;
+    flex-direction: row;
+    margin-top: 0px;
+    
+}
+
+.page1{
+    padding-left:100px;
+    padding-right: 100px;
+    display:flex;
+    flex-direction: column;
+}
+
+.we{
+    margin-top: 100px;
+    font-size: xxx-large;
+    font-weight: 300;
+    color:hsl(0, 36%, 70%);
+    letter-spacing: 10px;
+}
+
+.log1{
+    display:none;
+}
+b{
+    color:black;
+}
+
+.text1{
+    color:hsl(0, 36%, 70%);
+    padding-right: 120px;
+    font-size: 12px;
+    line-height: 20px;
+
+}
+
+#mail{
+    height:43px;
+    border-radius:50px;
+    position: absolute;
+    z-index: -1;
+    width: 250px;
+    border: solid 1px hsl(0, 36%, 70%);
+    font-family: josefin sans;
+    font-size: small;
+    margin-top:15px ;
+    
+}
+
+#mail::placeholder {
+    font-size:10px;
+    padding-left: 20px;
+    color: hsl(0, 36%, 70%,0.5);
+}
+
+button{
+    position: relative;
+    border-radius: 50px;
+    margin-left:200px;
+    height: 47px;
+    width:90px;
+    background: linear-gradient(to right,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border:0px;
+    color:white;
+    font-size:x-large;
+    font-family: Josefin Sans;
+    font-weight: 100;
+    margin-top: 15px;
+    box-shadow:  hsl(0, 74%, 74%) 0px 1px 10px 5px ;
+    
+}
+
+#base{
+    height:20px;
+    padding-top: 10px;
+    
+}
+
+.woman{
+    height: 600px;
+    margin-right: 250px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+
+@media  (max-width:500px){
+    .full{
+        display:flex;
+        flex-direction:column-reverse;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .woman{
+        height: 400px;
+        width:100%;
+    }
+
+    #base{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .text1{
+       padding: 0px;
+       text-align: center;
+       margin-top: 20px;
+    }
+    
+    .we{
+       margin: 0px;
+       padding:0px;
+    }
+
+    .page1{
+        padding:70px
+    }
+    
+    .log1{
+        display:flex;
+    }
+
+    button{
+        width:60px;
+    }
+}
